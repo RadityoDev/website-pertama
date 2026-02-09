@@ -1,4 +1,54 @@
-/* List TKJ */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #f4f6f8, #e9ecf1);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* HEADER */
+h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* SECTION */
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  border-left: 5px solid #4f46e5;
+  padding-left: 10px;
+}
+
+/* PARAGRAF */
+section p {
+  margin-bottom: 8px;
+}
+
+/* LIST (KEAHLIAN & PRAKTIK) */
 .list {
   margin-left: 20px;
 }
@@ -7,7 +57,43 @@
   margin-bottom: 8px;
 }
 
-/* Link */
+/* CARDS CONTAINER */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* CARD HOVER */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* CARD IMAGE */
+.card img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+/* CARD TEXT */
+.card p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* LINK */
 a {
   color: #4f46e5;
   text-decoration: none;
@@ -16,4 +102,19 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
 }
